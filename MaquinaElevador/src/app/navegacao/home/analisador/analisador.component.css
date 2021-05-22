@@ -1,0 +1,8 @@
+.conteudo{
+    height: 2400px;
+    width: 100%;
+    border: none;
+    background-image: linear-gradient(white, #c6e1ff59);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px #CFCFCF;    
+}

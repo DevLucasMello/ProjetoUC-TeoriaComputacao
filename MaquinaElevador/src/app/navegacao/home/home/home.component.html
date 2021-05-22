@@ -1,0 +1,26 @@
+<div *ngIf="!maquina && !elevador && ! analisador">
+  <div class="container main-container">
+    <div class="container">
+
+      <h4 class="espaco">Escolha uma opção</h4>
+      <hr class="espaco"/>
+
+      <button type="button" class="espaco btn btn-primary col-6"(click)="ativaMaquina()">Maquina de Doces</button>
+      <button type="button" class="espaco btn btn-secondary col-6 homeButton"(click)="ativaElevador()">Elevador</button>
+      <button type="button" class="espaco btn btn-success col-6 homeButton"(click)="ativaAnalisador()">Analisador Léxico</button>
+    </div>
+  </div>
+</div>
+
+
+<div *ngIf="maquina">
+  <app-maquina></app-maquina>
+</div>
+
+<div *ngIf="elevador">
+  <app-elevador></app-elevador>
+</div>
+
+<div *ngIf="analisador">
+  <app-analisador></app-analisador>
+</div>
